@@ -18,4 +18,6 @@ public interface CheckGroupDao {
     public void deleteById(Integer id);
     public long findCountByCheckGroupId(Integer checkGroupId);
     List<CheckGroup> findAll();
+
+    List<CheckGroup> findCheckGroupById(Integer id);
 }

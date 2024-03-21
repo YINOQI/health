@@ -78,4 +78,12 @@ public class SetmealServiceImpl implements SetmealService {
         setmealDao.deleteAssociation(id);
         setmealDao.deleteById(id);
     }
+
+    public List<Setmeal> findAll() {
+        return setmealDao.findAll();
+    }
+
+    public Setmeal findById(int id) {
+        return setmealDao.findById(id);
+    }
 }

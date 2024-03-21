@@ -106,6 +106,24 @@
             <version>3.14</version>
         </dependency>
 
+        <!--阿里云短信-->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--腾讯云短信-->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <version>3.1.62</version><!-- 注：这里只是示例版本号，请获取并替换为 最新的版本号 -->
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
