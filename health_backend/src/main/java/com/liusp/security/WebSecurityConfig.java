@@ -34,7 +34,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.headers().frameOptions().disable();
         http.authorizeRequests()
                 //指定哪些资源不需要进行权限校验，可以使用通配符
-                .antMatchers( "/static/**","/css/**","/img/**","/plugins/**","/js/**","/login.html").permitAll()
+                .antMatchers( "/**").permitAll()
                 ///pages/**路径下资源，已经经过认证（不是匿名用户）可以访问
                 .antMatchers("/pages/**").authenticated()
                 //前面没有匹配上的请求，全部需要认证；
