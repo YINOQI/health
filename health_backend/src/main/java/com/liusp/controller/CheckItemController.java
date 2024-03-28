@@ -23,7 +23,7 @@ public class CheckItemController {
 
     //新增
     // CHECKITEM_ADD 要与t_permission表中的keyword字段数据对应上
-    @PreAuthorize("hasAuthority('CHECKITEM_ADD')")//权限校验
+//    @PreAuthorize("hasAuthority('CHECKITEM_ADD')")//权限校验
     @RequestMapping("/add.do")
     public Result add(@RequestBody CheckItem checkItem){
         try {
@@ -46,7 +46,7 @@ public class CheckItemController {
 
     //删除
     //CHECKITEM_DELETE 要与t_permission表中的keyword字段数据对应上
-    @PreAuthorize("hasAuthority('CHECKITEM_DELETE')")//权限校验
+//    @PreAuthorize("hasAuthority('CHECKITEM_DELETE')")//权限校验
     @RequestMapping("/delete.do")
     public Result delete(Integer id){
         try {
