@@ -83,6 +83,13 @@
         select * from t_setmeal
     </select>
 
+    <select id="findSetmealCount" resultType="map">
+        select s.name,count(o.id) as value
+        from t_order o ,t_setmeal s
+        where o.setmeal_id = s.id
+        group by s.name
+    </select>
+
     <resultMap type="com.liusp.pojo.Setmeal" id="baseResultMap">
         <id column="id" property="id"/>
         <result column="name" property="name"/>

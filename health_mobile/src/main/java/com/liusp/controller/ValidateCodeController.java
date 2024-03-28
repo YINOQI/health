@@ -47,4 +47,6 @@ public class ValidateCodeController {
         //验证码发送成功
         return new Result(true, MessageConstant.SEND_VALIDATECODE_SUCCESS);
     }
+
+    
 }
